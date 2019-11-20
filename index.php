@@ -1,13 +1,31 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+	$usuario = $_SESSION['usuario'];
+?>
 
+<!DOCTYPE html>
 <html>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <head>
+		<title>Página Principal</title>
         <?php include 'header.php'; ?>
     <br>
     <br>
-   
+   <body>
+
+	<?php
+		if($usuario['perfil'] !="adm"){
+			echo 'Você não tem permissao de acesso!';
+		}else{
+	>?
+	<h3>Seja bem viado, <?php print($usuario['login'])?></h3>
+	<p>Você tem perfil de acesso: <?php print (['perfil']);?></p>
+		
+	<?php
+		}
+
+	?>
     <form action ='cadastroAgenda.php'Method='post'>
         <div class="form-group">
         <fieldset>
