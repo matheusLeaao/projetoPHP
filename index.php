@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$usuario=$_SESSION['usuario'];
+	$usuario=$_SESSION['txtLogin'];
 ?>
 <!DOCYTYPE html>
 <html>
@@ -17,11 +17,11 @@
 <br>
 <body>
 
-<?php
+	<?php
 		if($usuario['perfil']!="adm"){
 			echo 'Você não ter permissao!';
 		}else{
-?>
+	?>
 	
 	<h3>Seja bem viado, <?php print($usuario['login'])?></h3>
 	<p>Voce tem perfil: <?php print ($usuario['perfil']);?></p>
