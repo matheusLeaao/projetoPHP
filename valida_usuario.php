@@ -1,5 +1,5 @@
 <?php
-	require_once("conexao.php");
+	require_once('conexao.php');
 	session_start();
 	$login = $_POST['txtLogin'];
 	$senha = $_POST['txtSenha'];
