@@ -7,7 +7,7 @@
 <body>
 
 <h2>Autenticação</h2>
-	<form action="index.php" method="post">
+	<form action="valida_usuario.php" method="post">
 		Login: <input type="text" name="txtLogin"><br/>
 		Senha: <input type="text" name="txtSenha"><br/>
 		<input type="submit" value="Logar"/>
