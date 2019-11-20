@@ -23,7 +23,6 @@
 			header("Location: index.php");
 		}else{
 			$_SESSION['mensagem']="Login ou Senha invalido";
-			<?php echo'Login errado' ?>
 			header("location: login_usuario.php");
 		}
 	}
