@@ -10,7 +10,7 @@
 
 	<meta charset="UTF-8">
 <?php
-		if($usuario['perfil']=="adm"){
+		if($usuario['perfil']!="adm"){
 			echo 'Você não ter permissao!';
 		}else{
 ?>
