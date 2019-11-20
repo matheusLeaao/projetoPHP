@@ -17,7 +17,7 @@
 	if(isset($_SESSION['mensagem'])){
 		$msg = $_SESSION['mensagem'];
 		
-		echo '<p>'.$msg.'</p>';
+		echo ''<p>'.$msg.'</p>'';
 		unset($_SESSION['mensagem']);
 	}
 ?>
