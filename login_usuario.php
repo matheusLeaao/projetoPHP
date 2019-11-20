@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>AutenticaÁ„o de Usu·rios</title>
+		<title>Autentica√ß√£o de Usu√°rios</title>
 		<meta charset="UTF-8">
 	</head>
 <body>
 
-<h2>AutenticaÁ„o</h2>
+<h2>Autentica√ß√£o</h2>
 	<form action="valida_usuario.php" method="post">
 		Login: <input type="text" name="txtLogin"><br/>
 		Senha: <input type="text" name="txtSenha"><br/>

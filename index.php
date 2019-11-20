@@ -7,13 +7,14 @@
  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <script src="js/bootstrap.js" type="text/javascript"></script>
 <head>
+
+	<meta charset="UTF-8">
 <?php
 		if($usuario['perfil']!="adm"){
-			echo 'Você não ter permissao!';
+			echo 'VocÃª nÃ£o ter permissao!';
 		}else{
 ?>
 	<title>Pagina Principal</title>
-	<meta charset="UTF-8">
 	<?php include 'header.php'; ?>
 </head>
 <br>
