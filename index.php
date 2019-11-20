@@ -1,6 +1,5 @@
 <?php
-	require_once('conexao.php');
-	session_start();
+	session_start($conexao);
 	$usuario=$_SESSION['usuario'];
 ?>
 <!DOCYTYPE html>
