@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$usuario=$_SESSION['txtLogin'];
+	$usuario=$_SESSION['usuario'];
 ?>
 <!DOCYTYPE html>
 <html>
@@ -18,12 +18,12 @@
 <body>
 
 	<?php
-		if($usuario['perfil']!="adm"){
+		if($usuario['perfil']=="adm"){
 			echo 'Você não ter permissao!';
 		}else{
 	?>
 	
-	<h3>Seja bem viado, <?php print($usuario['login'])?></h3>
+	<h3>Seja bem vindo, <?php print ($usuario['login'])?></h3>
 	<p>Voce tem perfil: <?php print ($usuario['perfil']);?></p>
 	
 	<form action ='cadastroAgenda.php'Method='post'>
