@@ -14,8 +14,8 @@
 
 	}else{
 		$sql = "SELECT * FROM usuario WHERE login='$login' AND senha='$senha'";
-		$resultado = ms_query($sql);
-		$dados = ms_fetch_assoc($resultado);
+		$resultado = mysql_query($sql);
+		$dados = mysql_fetch_assoc($resultado);
 		
 		if($dados['login'] == $login and $dados['senha'] == $senha) {
 			$usuario = array("login"=>$dados['login'], "senha"=>$dados['senha'],"perfil"=>$dados['perfil']);
