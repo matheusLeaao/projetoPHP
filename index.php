@@ -18,7 +18,7 @@
 <body>
 
 	<?php
-		if($usuario['perfil']=="adm"){
+		if($usuario['perfil']!="adm"){
 			echo 'Você não ter permissao!';
 		}else{
 	?>
