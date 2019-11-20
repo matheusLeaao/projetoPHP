@@ -1,5 +1,5 @@
 <?php
-	session_start($conexao);
+	session_start('conexao.php');
 	$usuario=$_SESSION['usuario'];
 ?>
 <!DOCYTYPE html>
