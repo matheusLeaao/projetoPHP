@@ -1,10 +1,7 @@
 <?php include 'header.php'; ?>
-
+<br><br><br>
+<p>Projeto em desenvolvimento por Matheus Leão para entrega no dia 27/11</p>
+<br><br><br>
 <?php include 'footer.php'; ?>
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 

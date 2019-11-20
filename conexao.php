@@ -2,6 +2,6 @@
 $host ="localhost";
 $username="root";
 $passwd ="";
-$dbname ="aula16.10";
+$dbname ="projeto";
 $conexao = new mysqli($host, $username, $passwd, $dbname);
 
