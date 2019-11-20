@@ -9,17 +9,19 @@
 <head>
 
 	<meta charset="UTF-8">
-<?php
-		if($usuario['perfil']!="adm"){
-			echo 'Você não ter permissao!';
-		}else{
-?>
+
 	<title>Pagina Principal</title>
 	<?php include 'header.php'; ?>
 </head>
 <br>
 <br>
 <body>
+
+<?php
+		if($usuario['perfil']!="adm"){
+			echo 'Você não ter permissao!';
+		}else{
+?>
 	
 	<h3>Seja bem viado, <?php print($usuario['login'])?></h3>
 	<p>Voce tem perfil: <?php print ($usuario['perfil']);?></p>
