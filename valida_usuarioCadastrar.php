@@ -2,7 +2,8 @@
 	require_once('conexao.php');
 	session_start();
 	$login = $_POST['txtLogin'];
-	$senha = $_POST['txtSenha'];
+    $senha = $_POST['txtSenha'];
+    $perfil = $_POST['txtPerfil'];
 
 	if(empty($login)){
 		$_SESSION['mensagem']="Preencha o campo Login";
@@ -10,6 +11,10 @@
 
 	}else if (empty($senha)){
 		$_SESSION['mensagem']="Preencha o campo Senha";
+        header("location: login_usuario.php");
+    
+    }else if (empty($senha)){
+		$_SESSION['mensagem']="Preencha o campo perfil";
 		header("location: login_usuario.php");
 
 	}else{
