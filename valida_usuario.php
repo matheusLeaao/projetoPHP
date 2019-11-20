@@ -20,7 +20,7 @@
 		if($dados['login'] == $login and $dados['senha'] == $senha) {
 			$usuario = array("login"=>$dados['login'], "senha"=>$dados['senha'],"perfil"=>$dados['perfil']);
 			$_SESSION['usuario']=$usuario;
-			header("location: index.php");
+			header("Location: index.php");
 		}else{
 			$_SESSION['mensagem']="Login ou Senha invalido";
 			header("location: login_usuario.php");
