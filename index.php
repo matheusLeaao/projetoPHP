@@ -1,5 +1,5 @@
 <?php
-	session_start('conexao.php');
+	session_start();
 	$usuario=$_SESSION['usuario'];
 ?>
 <!DOCYTYPE html>
@@ -18,7 +18,7 @@
 <body>
 
 	<?php
-		if($usuario['perfil']!="adm"){
+		if($usuario['perfil']=="adm"){
 			echo 'Você não ter permissao!';
 		}else{
 	?>
