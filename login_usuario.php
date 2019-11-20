@@ -17,7 +17,7 @@
 	if(isset($_SESSION['mensagem'])){
 		$msg = $_SESSION['mensagem'];
 		
-		echo 'porra';
+		echo $msg;
 		unset($_SESSION['mensagem']);
 	}
 ?>

@@ -1,5 +1,5 @@
 <?php
-	require_once('conexao.php');
+	require_once('/conexao.php');
 	session_start();
 	$login = $_POST['txtLogin'];
 	$senha = $_POST['txtSenha'];
@@ -20,7 +20,7 @@
 		if($dados['login'] == $login and $dados['senha'] == $senha) {
 			$usuario = array("login"=>$dados['login'], "senha"=>$dados['senha'],"perfil"=>$dados['perfil']);
 			$_SESSION['usuario']=$usuario;
-			header("Location: index.php");
+			header("location: index.php");
 		}else{
 			$_SESSION['mensagem']="Login ou Senha invalido";
 			header("location: login_usuario.php");
