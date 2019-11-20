@@ -2,14 +2,17 @@
 	session_start();
 	$usuario = $_SESSION['usuario'];
 ?>
-
 <!DOCTYPE html>
 <html>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <head>
-		<title>Página Principal</title>
+	<title>Página Principal</title>
+	
+
         <?php include 'header.php'; ?>
+	</head>
+
     <br>
     <br>
    <body>
@@ -20,12 +23,8 @@
 		}else{
 	>?
 	<h3>Seja bem viado, <?php print($usuario['login'])?></h3>
-	<p>Você tem perfil de acesso: <?php print (['perfil']);?></p>
-		
-	<?php
-		}
-
-	?>
+	<p>Você tem perfil de acesso: <?php print ($usuario['perfil']);?></p>
+	
     <form action ='cadastroAgenda.php'Method='post'>
         <div class="form-group">
         <fieldset>
