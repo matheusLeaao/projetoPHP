@@ -7,7 +7,6 @@
 <body>
 
 <h2>Autenticação</h2>
-<a href="/cadastrouser.php">Cadastrar Usuario</a>
 	<form action="valida_usuario.php" method="post">
 		Login: <input type="text" name="txtLogin"><br/>
 		Senha: <input type="text" name="txtSenha"><br/>
